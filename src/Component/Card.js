@@ -48,8 +48,8 @@ function Card(props) {
             console.log(pay);
             const receipt = await pay.wait();
             if (receipt.confirmations > 0) {
-                setBought(pay);
                 console.log(pay);
+                setBought(pay);
             }
             
         } else {
